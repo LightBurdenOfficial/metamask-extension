@@ -3706,30 +3706,22 @@
     through2 "^2.0.3"
 
 "@metamask/phishing-warning@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@metamask/phishing-warning/-/phishing-warning-1.2.1.tgz#75554f8653a32c8d101c5b315707dd7990daf156"
-  integrity sha512-VfQLwiQmXg9YrJzBmDKN6eknNEkxYEAssTpoObVrDYiS91LjuDU59IjoIc1SN9IzDNxIP6ZI95dOculsm/o4qw==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@metamask/phishing-warning/-/phishing-warning-1.2.2.tgz#e967aba438759cbe6cb47623ca8de9690690d0b3"
+  integrity sha512-tRYOYxWZbndqVTgW1oDAom+LzJXWX/DA27f7tuXrESmMwZXLEKUDGuiKJZC9fYrzChqrS6xAEaukOGg5tt4Pqw==
   dependencies:
     "@metamask/design-tokens" "^1.6.0"
-    "@metamask/post-message-stream" "^5.1.0"
+    "@metamask/post-message-stream" "^6.0.0"
     globalthis "1.0.1"
     obj-multiplex "^1.0.0"
     pump "^3.0.0"
-    ses "0.12.4"
+    ses "^0.18.1"
 
 "@metamask/post-message-stream@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@metamask/post-message-stream/-/post-message-stream-4.0.0.tgz#72f120e562346ca86ccc9b3684023ad44265f0df"
   integrity sha512-r0JcoWXNuHycProx8ClxiIElJY/GVb/0/WWXTMsZu7qDejLo52VNXlwfydCdVjbMXeoT2nK1Yt3d5gjmHy5BWw==
   dependencies:
-    readable-stream "2.3.3"
-
-"@metamask/post-message-stream@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@metamask/post-message-stream/-/post-message-stream-5.1.0.tgz#3e9a2ed11b540b3868a0a28ffa8ec5a6e5fca29d"
-  integrity sha512-BQi/H67iM7wdtmvoPfgW9bazk/WjvRhXRa5lQ1FpgDlASv1bsCDJaQQ83Q3BwYyisnpnjgJRuC/2bRmas0LMxA==
-  dependencies:
-    "@metamask/utils" "^2.0.0"
     readable-stream "2.3.3"
 
 "@metamask/post-message-stream@^6.0.0":
@@ -18386,6 +18378,49 @@ lazystream@^1.0.0:
   dependencies:
     readable-stream "^2.0.5"
 
+lbch-ethers-wrapper@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lbch-ethers-wrapper/-/lbch-ethers-wrapper-1.2.0.tgz#bef65ff25eb64643fd8bda8da84a9cd0312b9768"
+  integrity sha512-adQAxqC75zeYpok4HqYlMZT9/RUz0gQvcPOlAOk2Prn9B9EVTa+6Dpz+eq0c8wVW0e/Rxu54HGSbNH0b7J+mQw==
+  dependencies:
+    "@types/bitcoinjs-lib" "^5.0.0"
+    "@types/bn.js" "^5.1.0"
+    "@types/node" "^14.14.0"
+    "@types/secp256k1" "^4.0.2"
+    bignumber.js "^9.0.1"
+    bip66 "^1.1.5"
+    bn.js "^5.2.0"
+    buffer "^5.1.0"
+    buffer-reverse "^1.0.1"
+    chai "^4.3.4"
+    crypto "^1.0.1"
+    elliptic "6.5.4"
+    ethers "^5.0.23"
+    hash.js "^1.1.7"
+    pushdata-bitcoin "^1.0.1"
+    safe-buffer "^5.1.1"
+    secp256k1 "^4.0.2"
+    typedarray-to-buffer "^4.0.0"
+    typeforce "^1.18.0"
+    typescript "^4.1.2"
+    varuint-bitcoin "1.1.0"
+    wif "^2.0.6"
+
+lbch-opcodes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lbch-opcodes/-/lbch-opcodes-1.0.0.tgz#2353d3647f0ec6283763338d52464c072f83f53f"
+  integrity sha512-m3FreWxFK53dz2RpvFfJlb4HaCog0QSNVCbyVwhX/0xkZpjxTjJXpFKaWQV/Im0q5y2UlvhAlpITsihihyJSug==
+
+lbchjs-lib@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/lbchjs-lib/-/lbchjs-lib-0.0.8.tgz#3bc19d2651e3d3f6aabc48742ef0e93987402604"
+  integrity sha512-hkt99ePZOmaboKbTnCPGvmA6fb0AvUfaI51jKTy9EAQuYFLfY4uEL/SrzMwpr8wJ2WUK1GNN4T3U/mX1J9mCww==
+  dependencies:
+    bignumber.js "^4.1.0"
+    bitcoinjs-lib "^3.3.2"
+    lbch-opcodes "^1.0.0"
+    safe-buffer "^5.1.1"
+
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
@@ -23682,49 +23717,6 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-lbch-ethers-wrapper@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/lbch-ethers-wrapper/-/lbch-ethers-wrapper-1.2.0.tgz#bef65ff25eb64643fd8bda8da84a9cd0312b9768"
-  integrity sha512-adQAxqC75zeYpok4HqYlMZT9/RUz0gQvcPOlAOk2Prn9B9EVTa+6Dpz+eq0c8wVW0e/Rxu54HGSbNH0b7J+mQw==
-  dependencies:
-    "@types/bitcoinjs-lib" "^5.0.0"
-    "@types/bn.js" "^5.1.0"
-    "@types/node" "^14.14.0"
-    "@types/secp256k1" "^4.0.2"
-    bignumber.js "^9.0.1"
-    bip66 "^1.1.5"
-    bn.js "^5.2.0"
-    buffer "^5.1.0"
-    buffer-reverse "^1.0.1"
-    chai "^4.3.4"
-    crypto "^1.0.1"
-    elliptic "6.5.4"
-    ethers "^5.0.23"
-    hash.js "^1.1.7"
-    pushdata-bitcoin "^1.0.1"
-    safe-buffer "^5.1.1"
-    secp256k1 "^4.0.2"
-    typedarray-to-buffer "^4.0.0"
-    typeforce "^1.18.0"
-    typescript "^4.1.2"
-    varuint-bitcoin "1.1.0"
-    wif "^2.0.6"
-
-lbch-opcodes@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lbch-opcodes/-/lbch-opcodes-1.0.0.tgz#2353d3647f0ec6283763338d52464c072f83f53f"
-  integrity sha512-m3FreWxFK53dz2RpvFfJlb4HaCog0QSNVCbyVwhX/0xkZpjxTjJXpFKaWQV/Im0q5y2UlvhAlpITsihihyJSug==
-
-lbchjs-lib@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/lbchjs-lib/-/lbchjs-lib-0.0.8.tgz#3bc19d2651e3d3f6aabc48742ef0e93987402604"
-  integrity sha512-hkt99ePZOmaboKbTnCPGvmA6fb0AvUfaI51jKTy9EAQuYFLfY4uEL/SrzMwpr8wJ2WUK1GNN4T3U/mX1J9mCww==
-  dependencies:
-    bignumber.js "^4.1.0"
-    bitcoinjs-lib "^3.3.2"
-    lbch-opcodes "^1.0.0"
-    safe-buffer "^5.1.1"
-
 query-ast@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/query-ast/-/query-ast-1.0.4.tgz#efa832e1270cc3e0ab42291716f73a7de1928c2a"
@@ -25717,7 +25709,7 @@ serve-static@1.14.1:
     parseurl "~1.3.3"
     send "0.17.1"
 
-ses@0.12.4, ses@^0.12.4:
+ses@^0.12.4:
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/ses/-/ses-0.12.4.tgz#f466f7199292b5c4454949c7d497f5569ade5805"
   integrity sha512-qbtkhuuAXNXb390yiaNUdNvDg/QmX7W2cO+srIUJllINMYADc/8m0vt7DNBmq+rqOBRrjVRPPeyQq8ZTLK3Rmw==
@@ -25730,6 +25722,11 @@ ses@^0.15.15, ses@^0.15.17:
   version "0.15.17"
   resolved "https://registry.yarnpkg.com/ses/-/ses-0.15.17.tgz#84e20cd08fb294989c6499942d220bd6604e1884"
   integrity sha512-T8XKsR5LGV57ilyqE4InFJKWVniEEFGai0CjuVJPju9LvnjYPXvZ7V8jP7sGtJ500ApRVgNBCu+5ZcSUhiuXig==
+
+ses@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/ses/-/ses-0.18.1.tgz#cd0e6460672f12fd639e9c15d681d45d16901c05"
+  integrity sha512-TySWbVcVDL7V/5lSoPz2EgTirn9APy6ib7lYMsiQ8OkEMA4dVwc1a3REHEzOqjQ8g7f0bLWErOt5IbIMsxf5aQ==
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
