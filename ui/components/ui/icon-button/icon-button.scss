@@ -1,0 +1,28 @@
+.icon-button {
+  background-color: unset;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 27px;
+  font-family: 'Gotham Light';
+
+  cursor: pointer;
+  color: white;
+
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 46px;
+    background: $ui-bg-button;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+    cursor: auto;
+  }
+}

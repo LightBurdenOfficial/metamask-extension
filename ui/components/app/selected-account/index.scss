@@ -1,0 +1,70 @@
+.selected-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  &__tooltip-wrapper {
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    color: var(--color-text-alternative);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 4px;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: light;
+    color: #EBEBEB;
+    // display: flex;
+    align-items: center;
+  }
+
+  &__clickable {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    background-color: unset;
+
+    &:hover,
+    &:active {
+      // background-color: var(--color-background-alternative);
+    }
+  }
+
+  &__copy {
+    display: inline-block;
+    margin-inline-start: 3px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .selected-account {
+    &__name {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    &__clickable {
+      display: block;
+    }
+
+    &__address {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.permissions-connect-choose-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+
+  .fa-info-circle {
+    color: $Grey-200;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 0.9rem;
+  }
+
+  .fa-info-circle:hover {
+    color: $Grey-300;
+  }
+
+  @media screen and (min-width: $break-large) {
+    width: 612px;
+  }
+
+
+  &__title {
+    @include H4;
+  }
+
+  &__cancel {
+    color: var(--color-error-default);
+  }
+
+  &__text,
+  &__text-blue,
+  &__text-grey {
+    @include H6;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $Black-200;
+  }
+
+  &__text-blue {
+    color: $primary-blue;
+    cursor: pointer;
+  }
+
+  &__text-grey {
+    color: $Grey-500;
+  }
+
+  &__accounts-list {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 7px;
+  }
+
+  &__content {
+    display: flex;
+    flex: 0;
+    width: 100%;
+    padding: 16px 34px 16px 24px;
+    background-color: #F8F8F8;
+  }
+
+  &__accounts-list-header--one-item {
+    justify-content: flex-end;
+  }
+
+  &__accounts-list-header--two-items {
+    justify-content: space-between;
+  }
+
+  &__account-info-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 0;
+  }
+
+  &__list-check-box {
+    color: $Black-200;
+    margin-right: 19px;
+
+    i {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__header-check-box {
+    color: $Black-200;
+    margin-right: 19px;
+  }
+
+  &__select-all {
+    display: flex;
+    align-items: center;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #C5C6CB;
+    justify-content: space-between;
+
+    &:hover {
+      background: $Grey-000;
+      cursor: pointer;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 23px;
+      min-width: 0;
+    }
+
+    &__label {
+      font-size: 20px;
+      line-height: 27px;
+      color: $Black-300;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &__balance {
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 24px;
+      color: $Black-200;
+    }
+
+    &__last-connected {
+      @include H8;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: $primary-blue;
+    }
+  }
+
+  &__cancel {
+    color: $Red-400;
+  }
+
+  &__footer-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include screen-sm-min {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+    padding: 26px 48px 46px;
+  }
+
+  &__bottom-buttons {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #d6d9dc;
+    margin-top: 40px;
+
+    @include screen-sm-min {
+      border-top: none;
+    }
+
+    button {
+      width: 124px;
+    }
+
+    .btn-secondary {
+      background: white;
+      margin-left: 12px;
+    }
+
+    .btn-primary {
+      margin-right: 12px;
+    }
+  }
+}

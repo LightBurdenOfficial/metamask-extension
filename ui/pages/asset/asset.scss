@@ -1,0 +1,81 @@
+.asset {
+  &__container {
+    background-color: var(--color-background-default);
+  }
+
+  &__overview {
+    box-shadow: var(--shadow-size-xs) var(--color-shadow-default);
+  }
+
+  &__header {
+    background-color: $ui-bg;
+    width: 100vw;
+    padding: 30px 5%;
+    margin-left: calc((-100vw + 618px)/2);
+    margin-bottom: -15px;
+
+    .asset-breadcrumb {
+      color: white;
+    }
+
+    .asset-options__button {
+      color: white;
+    }
+
+    .asset__overview {
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: $break-midpoint) {
+  .asset {
+    &__header {
+      margin-left: calc((-99vw + 85vw)/2);
+    }
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .asset {
+    &__header {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.asset-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.asset-breadcrumb {
+  @include H6;
+
+  color: var(--color-text-default);
+  background-color: inherit;
+
+  &__chevron {
+    font-size: $font-size-paragraph;
+    padding: 0 10px 0 2px;
+  }
+
+  &__asset {
+    font-weight: bold;
+  }
+}
+
+.asset-options {
+  &__button {
+    font-size: $font-size-paragraph;
+    color: var(--color-text-default);
+    background-color: inherit;
+    padding: 2px 0 2px 8px;
+  }
+
+  &__icon {
+    font-weight: 900;
+  }
+}
